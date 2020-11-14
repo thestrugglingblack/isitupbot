@@ -1,0 +1,24 @@
+{
+  "name": "isitup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "jest --coverage --watchAll=false"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3",
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "jest": "^26.6.3"
+  }
+}
