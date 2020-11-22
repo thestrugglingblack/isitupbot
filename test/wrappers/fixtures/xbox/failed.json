@@ -1,0 +1,144 @@
+{
+    "Status": {
+        "Overall": {
+            "State": "None",
+            "Id": 1,
+            "LastUpdated": "2020-11-10T00:24:25.7461438+00:00"
+        },
+        "SelectedScenarios": {
+            "State": "Impacted",
+            "Id": 2,
+            "LastUpdated": "2020-11-10T00:24:25.7461438+00:00"
+        }
+    },
+    "CoreServices": [
+        {
+            "Id": 2,
+            "Name": "Xbox Live Core Services",
+            "Status": {
+                "Name": "None",
+                "Id": 1
+            },
+            "Scenarios": []
+        },
+        {
+            "Id": 3,
+            "Name": "Purchase and Content Usage",
+            "Status": {
+                "Name": "None",
+                "Id": 1
+            },
+            "Scenarios": []
+        },
+        {
+            "Id": 4,
+            "Name": "TV, Music and Video",
+            "Status": {
+                "Name": "None",
+                "Id": 1
+            },
+            "Scenarios": []
+        },
+        {
+            "Id": 5,
+            "Name": "Social and Gaming",
+            "Status": {
+                "Name": "None",
+                "Id": 1
+            },
+            "Scenarios": []
+        }
+    ],
+    "Apps": [
+        {
+            "Id": 7,
+            "Name": "Xbox One",
+            "Status": {
+                "Name": "None",
+                "Id": 1
+            },
+            "Scenarios": []
+        },
+        {
+            "Id": 9,
+            "Name": "Xbox 360",
+            "Status": {
+                "Name": "None",
+                "Id": 1
+            },
+            "Scenarios": []
+        },
+        {
+            "Id": 12,
+            "Name": "Windows & Mobile",
+            "Status": {
+                "Name": "None",
+                "Id": 1
+            },
+            "Scenarios": []
+        }
+    ],
+    "Games": [
+        {
+            "Id": 6,
+            "Name": "Xbox One",
+            "Status": {
+                "Name": "Impacted",
+                "Id": 2
+            },
+            "Scenarios": [
+                {
+                    "Id": 144389848,
+                    "Name": "Destiny 2",
+                    "Devices": [
+                        {
+                            "Id": 1,
+                            "Name": "Xbox One"
+                        }
+                    ],
+                    "Incidents": [
+                        {
+                            "Id": 2212,
+                            "Begin": "2020-11-09T16:00:00.0000000-08:00",
+                            "End": null,
+                            "Stage": {
+                                "Id": 4,
+                                "Message": "We are seeing indications that we are on the path to recovery with this feature, and we expect to be back up and running shortly."
+                            },
+                            "ImpactedDevices": [
+                                1
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": 8,
+            "Name": "Xbox 360",
+            "Status": {
+                "Name": "None",
+                "Id": 1
+            },
+            "Scenarios": []
+        },
+        {
+            "Id": 11,
+            "Name": "Windows & Mobile",
+            "Status": {
+                "Name": "None",
+                "Id": 1
+            },
+            "Scenarios": []
+        }
+    ],
+    "Website": {
+        "Id": 1,
+        "Name": "Website",
+        "Status": {
+            "Name": "None",
+            "Id": 1
+        },
+        "Scenarios": []
+    }
+}

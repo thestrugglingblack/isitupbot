@@ -1,19 +1,20 @@
-const xboxWrapper = require('../../src/wrappers/xbox-wrapper');
-const request = require('../../src/util/request');
+import axios from 'axios'
 
-const success = require('../fixtures/xbox/success.json');
-const failed =  require('../fixtures/xbox/failed.json');
+import xboxWrapper from "../../src/wrappers/xbox-wrapper";
 
-const green = String.fromCodePoint('0x1F7E2')
-const red = String.fromCodePoint('0x1F534')
+import  success from './fixtures/xbox/success.json';
+import failed from './fixtures/xbox/failed.json';
 
-const axios = require('axios');
 
-jest.mock('axios');
+const green = String.fromCodePoint(0x1F7E2)
+const red = String.fromCodePoint(0x1F534)
+
 describe('[ Xbox Wrapper ]',  () => {
 
     test('returns Failed Xbox Data', async ()=> {
-        axios.get.mockResolvedValue({data: failed})
+        const mocked = jest.spyOn(axios, 'get')
+        mocked.mockResolvedValue({data: failed})
+
 
         const msg = [
             `Here is the current status of Xbox Servers: \n`,
@@ -32,11 +33,12 @@ describe('[ Xbox Wrapper ]',  () => {
             `  - Windows & Mobile is currently 🟢\n`].toString().replace(/,/g, '');
 
         expect(await xboxWrapper()).toEqual(msg)
-        axios.get.mockReset()
+        mocked.mockReset()
     })
 
     test('returns Success Xbox Data', async ()=> {
-        axios.get.mockResolvedValue({data: success})
+        const mocked = jest.spyOn(axios, 'get')
+        mocked.mockResolvedValue({data: success})
         const msg = [
             `Here is the current status of Xbox Servers: \n`,
             `- CoreServices \n`,
@@ -53,6 +55,6 @@ describe('[ Xbox Wrapper ]',  () => {
             `  - Xbox 360 is currently 🟢\n`,
             `  - Windows & Mobile is currently 🟢\n`].toString().replace(/,/g, '');
         expect(await xboxWrapper()).toBe(msg)
-        axios.get.mockReset()
+        mocked.mockReset()
     })
 })
