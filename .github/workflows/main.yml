@@ -33,15 +33,15 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install and Buils
         run: |
-        echo Installing dependencies...
-        npm install
-        echo Building codebase...
+        echo Installing dependencies...,
+        npm install,
+        echo Building codebase...,
         npm run build
 
       # Runs a set of commands using the runners shell
       - name: Lint and Test
         run: |
-          echo Linting codebase....
-          npm run lint
-          echo Testing codebase...
+          echo Linting codebase....,
+          npm run lint,
+          echo Testing codebase...,
           npm run test
