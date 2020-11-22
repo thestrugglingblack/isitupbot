@@ -6,7 +6,8 @@
   "scripts": {
     "start": "tsc && nodemon dist/src/index.js",
     "test": "jest --coverage --watchAll=false",
-    "lint": "tslint -c tslint.json 'src/**/*.ts' && prettier --write 'src/**/*.{ts,tsx}'"
+    "lint": "tslint -c tslint.json 'src/**/*.ts' && prettier --write 'src/**/*.{ts,tsx}'",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",

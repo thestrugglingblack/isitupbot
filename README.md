@@ -59,6 +59,12 @@ Coming Soon...
 - [X] Implement TypeScript and linting.    
 - [ ] Setup CI/CD to help with build process. 
  - GitHub => GitHub Actions
+    - [ ] Build TS files
+    - [ ] Run Linters
+    - [ ] Run Test
+    - [ ] Build Podman/Docker Image
+    - [ ] Publish to container registry
+    - [ ] Deploy to Microsoft Virtual Machines
 - [ ] Dockerzie or Podmanize  bot server.
 - [ ] Deploy it to a cloud a service. 
   - Microsoft Azure
