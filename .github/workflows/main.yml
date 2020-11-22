@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       # Runs a single command using the runners shell
-      - name: Install and Buils
+      - name: Install and Builds
         run: |
           echo Installing dependencies...
           npm install

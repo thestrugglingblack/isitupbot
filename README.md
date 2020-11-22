@@ -64,12 +64,11 @@ Coming Soon...
     - [X] Run Linters
     - [X] Run Test
     - [ ] Build Podman/Docker Image
+        - [ ] Combine build, lint and test within image and remove BLT workflow
     - [ ] Publish to container registry
     - [ ] Deploy to Microsoft Virtual Machines
 - [ ] Dockerzie or Podmanize  bot server.
 - [ ] Deploy it to a cloud a service. 
   - Microsoft Azure
-  - Google Cloud Platform
-  - Amazon Web Services
 
 
