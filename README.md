@@ -32,6 +32,7 @@
                     ██ ███████ ██    ██     ██████  ██      ██████   ██████     ██ 
 
 ```
+![CI](https://github.com/thestrugglingblack/isitupbot/workflows/CI/badge.svg)
 
 ## Overview
 IsItUp is a Discord bot dedicated letting us know if any of our favorite console or game servers are experiencing an outage.
@@ -59,9 +60,9 @@ Coming Soon...
 - [X] Implement TypeScript and linting.    
 - [ ] Setup CI/CD to help with build process. 
  - GitHub => GitHub Actions
-    - [ ] Build TS files
-    - [ ] Run Linters
-    - [ ] Run Test
+    - [X] Build TS files
+    - [X] Run Linters
+    - [X] Run Test
     - [ ] Build Podman/Docker Image
     - [ ] Publish to container registry
     - [ ] Deploy to Microsoft Virtual Machines
