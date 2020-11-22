@@ -27,7 +27,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run tests
-        run: docker build . --file Dockerfile --tag isitupbot:$(date +%s)
+        run: docker build . --file Dockerfile --tag isitupbot:$(date +%s) --build-arg DISCORD_TOKEN=$DISCORD_TOKEN && echo $DISCORD_TOKEN
+
         
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/

@@ -7,7 +7,8 @@
     "start": "tsc && nodemon dist/src/index.js",
     "test": "jest --coverage --watchAll=false",
     "lint": "tslint -c tslint.json 'src/**/*.ts' && prettier --write 'src/**/*.{ts,tsx}'",
-    "build": "tsc"
+    "build": "tsc",
+    "verify": "echo process.env.DISCORD_TOKEN"
   },
   "author": "",
   "license": "ISC",
