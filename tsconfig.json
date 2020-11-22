@@ -10,8 +10,6 @@
     "allowSyntheticDefaultImports": true
   },
   "lib": ["es2015"],
-//  "include": [
-//  ],
   "exclude": [
     "node_modules",
     "coverage"

@@ -1,5 +1,3 @@
-import mock = jest.mock;
-
 const axios = require('axios');
 
 import psnWrapper from "../../src/wrappers/ps-wrapper";
